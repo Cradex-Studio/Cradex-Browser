@@ -26,7 +26,9 @@ int main()
 			renderer.displayBackground(250, 250, 250, 1);
 		}
 
-		renderer.drawSquare(glm::vec2(0.0f, 0.0f), glm::vec2(1.0f, 1.0f), 0.0f, glm::vec4(0.1f, 0.5f, 0.5f, 1.0f));
+		renderer.drawSquare(glm::vec2(725.0f, 500.0f), glm::vec2(550.0f, 120.0f), 0.0f, glm::vec4(0.5f, 0.5f, 0.5f, 1.0f));
+
+		renderer.renderText("This is sample text", 500.0f, 500.0f, 1.0f, glm::vec3(1.0, 1.0f, 1.0f));
 
 		renderer.displayFrame();
 	}

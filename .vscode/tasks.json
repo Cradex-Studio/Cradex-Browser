@@ -10,10 +10,12 @@
                 "-std=c++17",
     		    "-IC:/msys64/mingw64/include",
                 "-IC:/msys64/mingw64/include/glm",
+                "-IC:/msys64/mingw64/include/freetype2",
 		        "-L$C:/msys64/mingw64/lib",				
 		        "${workspaceFolder}/src/\\*.cpp",				
 		        "${workspaceFolder}/src/External/glad.c",
                 "-lglfw3",
+                "-lfreetype",
                 "-o",
                 "${workspaceFolder}/bin/main.exe"
             ],
