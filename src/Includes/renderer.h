@@ -43,6 +43,11 @@ private:
 
   std::unique_ptr<Shader> shader;
   std::unique_ptr<Shader> textShader;
+
+  void initGLFW();
+  void initGlad();
+  void initFreeType2();
+  void initSquareBuffers();
 };
 
 #endif
