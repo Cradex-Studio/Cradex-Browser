@@ -1,12 +1,7 @@
 #ifndef DOM_NODE_H
 #define DOM_NODE_H
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
 #include <vector>
 #include <memory>
-#include <glm/glm/glm.hpp>
-#include <glm/glm/gtc/matrix_transform.hpp>
-#include "shader.h"
 
 enum NodeType
 {

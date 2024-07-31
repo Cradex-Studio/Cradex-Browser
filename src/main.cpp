@@ -4,6 +4,7 @@
 #include <glm/glm/gtc/matrix_transform.hpp>
 #include "Includes/shader.h"
 #include "Includes/renderer.h"
+#include "Includes/lexer.h"
 
 void processInput(GLFWwindow *window);
 
@@ -12,6 +13,21 @@ bool darkMode = true;
 int main()
 {
 	Renderer renderer;
+
+	std::vector<HTMLToken> tokens = tokenizeHTML(R"(<html>
+	<body>
+	<p>This is sample text</p>
+	</body>
+	</html>)");
+
+	for (auto &token : tokens)
+	{
+		if (token.type == Text)
+		{
+			std::cout << token.content << " : ";
+		}
+		std::cout << token.type << std::endl;
+	}
 
 	while (renderer.rendering())
 	{
