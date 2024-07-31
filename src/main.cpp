@@ -20,14 +20,17 @@ int main()
 	</body>
 	</html>)");
 
-	for (auto &token : tokens)
-	{
-		if (token.type == Text)
+	// This is a debug print for the lexer:
+	/*
+		for (auto &token : tokens)
 		{
-			std::cout << token.content << " : ";
+			if (token.type == Text)
+			{
+				std::cout << token.content << " : ";
+			}
+			std::cout << token.type << std::endl;
 		}
-		std::cout << token.type << std::endl;
-	}
+		*/
 
 	while (renderer.rendering())
 	{
