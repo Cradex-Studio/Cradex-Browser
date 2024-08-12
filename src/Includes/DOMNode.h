@@ -9,6 +9,7 @@ enum NodeType
   Body,
   Head,
   P,
+  Text,
   H1,
   H2,
   H3,

@@ -1,8 +1,8 @@
+#ifndef LEXER_H
+#define LEXER_H
 #include <unordered_map>
 #include <string>
 #include <vector>
-#ifndef LEXER_H
-#define LEXER_H
 
 enum HTMLTokenType
 {
