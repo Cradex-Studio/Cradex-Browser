@@ -8,6 +8,7 @@ enum NodeType
   HTML,
   Body,
   Head,
+  Title,
   P,
   Text,
   H1,
