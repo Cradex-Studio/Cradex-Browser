@@ -5,10 +5,10 @@
 #include <iostream>
 #include "DOMNode.h"
 
-class parser
+class Parser
 {
 public:
-  parser();
+  Parser();
   bool invalidTokensFlag;
 
   DOMNode produceDOM(std::string src); // note: put tokenize function at the beginning of this and set tokens equal to the result
